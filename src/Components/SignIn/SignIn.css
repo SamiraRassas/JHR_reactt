@@ -1,0 +1,15 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+article {
+    margin-top: 14%;
+    background-color: rgb(219, 240, 240);
+   
+
+}
+
+
