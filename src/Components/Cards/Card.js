@@ -1,11 +1,11 @@
 import React from 'react';
 import house1 from '../../photos/house1.jpg';
-
 import './Card.css'
 
 
 const card = () => {
 	return(
+		<>
         <div className='col'>
 		<div className=' 
         bg-washed-green dib card1 br3 pa3  grow bw2 shadow-5' >
@@ -26,6 +26,7 @@ const card = () => {
 			</div>
 		</div>
         </div>
+ </>
 		);
 }
 

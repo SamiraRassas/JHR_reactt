@@ -17,23 +17,31 @@ body
   .navBar{
     display:flex;
     font-size:20px;
-    background-color: rgb(219, 240, 240);
+    color:white;
+    background-color: rgb(65, 103, 173);
+    /* background-color: rgb(219, 240, 240); */
     justify-content: center;
     padding-top: 10px;
-    height: 30px;
+    height: 50px;
 }
 .nav-list{
+    /* padding-top: 10px; */
     list-style-type: none;
-    display: inline-flex;
-    justify-content: center;
-    font-size: large;
+    display:flex;
+    justify-content: space-between;
+    /* padding-left: 10px; */
+    font-size: 20px;
     text-align: center;
-    
 } 
 .nav-link{
     color: black;
     text-decoration: none;
     padding: 20px 10px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+a.nav-link  {
+    margin-left: 50px;
 }
 .navBar  a:hover{
 
@@ -51,5 +59,27 @@ color: rgb(121, 121, 121)}
     height:3px;
     background-color: black;
     margin-bottom: 4px;
+
+}
+@media all and (max-width: 480px){
+    .navBar{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right:15px;
+        top:px;
+    }
+    .nav-list{
+        display: none;
+        border-top: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+    .active{
+        display: block;
+        padding-top: 100px;
+    }
 
 }

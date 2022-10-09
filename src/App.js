@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home';
+import Homedetails from './Components/Home/HomeDetails';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import SignIn from './Components/SignIn/SingIn';
@@ -14,6 +15,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
+    <>
     <Router>
       <Nav />
       <Routes>
@@ -23,19 +25,16 @@ function App() {
           <Route path='signin' element={< SignIn />} />
           <Route path='signup' element={<SignUp />} />
           <Route path='explore' element={<Card />} />
+          <Route path='homedetails' element={<Homedetails />} />
 
           {/* <Route path="contact" element = {<Contact />}/>
           <Route path="project1" element = {<Card />} /> */}
       </Routes>
-      
-
-
     
-
-      
-  
    
     </Router>
+    <Footer />
+    </>
   );
 }
 
